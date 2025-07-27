@@ -1,5 +1,5 @@
-const Wrapper = ({children}) => {
-  return <div className="wrapper">{children}</div>
+const Wrapper = ({children, ...props}) => {
+  return <div className={`wrapper ${props.classNames}`}>{children}</div>
 }
 
 export default Wrapper;
