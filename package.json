@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start-next-app": "npm run dev --workspace=devfolio-next-app"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.2.3"
+  }
+}
