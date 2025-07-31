@@ -2,3 +2,7 @@
   box-shadow: 0 6px 22px -3px rgba(0, 0, 0, 0.1);
   background: #1a0b2e;
 }
+
+.main-container, .logo-container, .logo-wrapper {
+  transition: all 0.5s ease-in-out;
+}
