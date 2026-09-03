@@ -1,7 +1,11 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    extend: {     
+    extend: {
+      colors: {
+        "nights-mantle": "#11071f",
+        "test-color": "#ff00ff",
+      },
     },
   },
 };
