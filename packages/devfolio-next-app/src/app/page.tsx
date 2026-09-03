@@ -3,6 +3,10 @@ import Image from 'next/image';
 // import { Wrapper } from 'ui-components';
 import { Text } from 'ui-components';
 import classes from './styles.module.css';
+import WorkExperience from './components/WorkExperience';
+import TechStack from './components/TechStack';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 export default function Home() {
   // return (
@@ -60,6 +64,10 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <WorkExperience />
+        <TechStack />
+        <Projects />
+        <Contact />
       </div>
     </div>
   );
