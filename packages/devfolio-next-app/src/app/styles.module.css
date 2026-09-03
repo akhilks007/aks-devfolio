@@ -3,6 +3,15 @@
   background: #1a0b2e;
 }
 
-.main-container, .logo-container, .logo-wrapper {
+.main-container,
+.logo-container,
+.logo-wrapper {
   transition: all 0.5s ease-in-out;
+}
+
+.image-wrapper {
+  background-image: url('../../public/gradient@3x.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
