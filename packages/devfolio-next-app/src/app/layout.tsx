@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Preahvihear } from 'next/font/google';
+import Header from './components/header/Header';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -32,7 +33,15 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${preahvihear.variable} antialiased`}>
-        {children}
+        <a
+          href='#content'
+          className='sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-full focus:bg-violet-600 focus:px-4 focus:py-2 focus:text-sm focus:text-white'>
+          Skip to content
+        </a>
+        <Header />
+        <main id='content' className='pt-[var(--header-h)]'>
+          {children}
+        </main>
       </body>
     </html>
   );
