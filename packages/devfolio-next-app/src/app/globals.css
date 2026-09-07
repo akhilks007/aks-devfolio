@@ -1,9 +1,13 @@
 @import 'tailwindcss';
 
+/* The site is dark by design — every component paints text-white on a violet
+   ground — so the dark palette is the default rather than a prefers-color-scheme
+   opt-in. Without this, light-mode visitors got white text on a white page. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #11071f;
+  --foreground: #ededed;
   --header-h: 4rem;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -16,13 +20,6 @@
 @theme {
   --color-brand-surface: #1a0b2e;
   --shadow-header: 0 6px 22px -3px rgb(0 0 0 / 0.45);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #11071f;
-    --foreground: #ededed;
-  }
 }
 
 html {
