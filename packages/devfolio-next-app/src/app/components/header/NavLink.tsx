@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from 'motion/react';
 import type { NavItem } from './nav-items';
 import Magnetic from './Magnetic';
-import { fadeUpBlur, reducedFadeUpBlur } from './variants';
+import { fadeUpBlur, reducedFadeUpBlur } from '../variants';
 
 type NavLinkProps = {
   item: NavItem;

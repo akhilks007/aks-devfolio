@@ -17,7 +17,7 @@ import MenuToggle from './MenuToggle';
 import MobileMenu from './MobileMenu';
 import { LogoMark } from './icons';
 import useActiveSection from './useActiveSection';
-import { fadeUpBlur, reducedFadeUpBlur, staggerContainer } from './variants';
+import { fadeUpBlur, reducedFadeUpBlur, staggerContainer } from '../variants';
 
 const rowVariants = staggerContainer(0.08, 0.15);
 

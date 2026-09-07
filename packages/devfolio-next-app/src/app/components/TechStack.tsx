@@ -16,10 +16,13 @@ const tools = [
 ];
 
 export default function TechStack() {
+  // overflow-hidden: the decorative rings below are wider than a phone viewport
+  // by design, and clipping them here keeps the page from scrolling sideways on
+  // small screens.
   return (
     <section
       id='stack'
-      className='flex flex-col items-center px-6 py-24 text-center'>
+      className='flex flex-col items-center overflow-hidden px-6 py-24 text-center'>
       <p className='text-base font-medium text-white md:text-lg'>
         I&apos;m currently looking to join a{' '}
         <span className='text-violet-400'>cross-functional</span> team
