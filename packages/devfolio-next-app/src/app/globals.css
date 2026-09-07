@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --header-h: 4rem;
 }
 
 @theme inline {
@@ -12,11 +13,24 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@theme {
+  --color-brand-surface: #1a0b2e;
+  --shadow-header: 0 6px 22px -3px rgb(0 0 0 / 0.45);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #11071f;
     --foreground: #ededed;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  /* offsets every in-page anchor by the fixed header, in one rule */
+  scroll-padding-top: calc(var(--header-h) + 0.75rem);
+  /* keeps the layout still when the mobile overlay locks body scroll */
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -25,7 +39,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
-  transition: all 0.5s ease-in-out;
-}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
