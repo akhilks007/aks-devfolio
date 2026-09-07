@@ -3,7 +3,7 @@
 import { motion } from 'motion/react';
 import { NAV_ITEMS } from './nav-items';
 import NavLink from './NavLink';
-import { staggerContainer } from './variants';
+import { staggerContainer } from '../variants';
 
 const listVariants = staggerContainer(0.06, 0);
 
